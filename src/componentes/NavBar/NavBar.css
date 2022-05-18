@@ -1,4 +1,13 @@
-.App-NavBar {
+.nav {
     display: flex;
-    flex-direction: row;
+    margin: 30px;
+    padding: 50px;
+    justify-content: space-between;
+    
+}
+
+
+.nav-botones {
+    display: flex;
+    margin: 30px;
 }

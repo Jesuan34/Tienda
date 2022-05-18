@@ -1,8 +1,12 @@
+import './CardWidget.css';
+
 const CardWidget = () => {
-    return(
-        <div>
-            <img src='https://picsum.photos/id/870/200/300?grayscale' />
-            3
+    return (
+        <div className="card-widget">
+            
+                <img className="card-img" src='/imagenes/IconoCarrito.svg' alt="icono-carrito" />
+                <h3 className="card-numero">3</h3>
+            
         </div>
     )
 }

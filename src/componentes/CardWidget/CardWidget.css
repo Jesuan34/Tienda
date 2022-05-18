@@ -1,0 +1,16 @@
+.card-widget{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-img{
+    height: 60px;
+    width: 70px;
+    
+}
+
+
+
+
+
+
