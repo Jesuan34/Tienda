@@ -8,11 +8,11 @@ const NavBar = () => {
                 <CardWidget className="card" />
             </div>
             <div>
-                <h1 className="nav-titulo">Del Valle</h1>
+                <h1 className="nav-titulo">Nunca es suficiente</h1>
                 <div className="nav-botones">
-                    <button className="nav-boton1">Macbook</button>
-                    <button className="nav-boton2">Iphone</button>
-                    <button className="nav-boton3">Accesorios</button>
+                    <button className="nav-boton1">Cervezas</button>
+                    <button className="nav-boton2">Aperitivos</button>
+                    <button className="nav-boton3">Snaks</button>
                 </div>
             </div>
         </nav>
