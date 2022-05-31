@@ -3,12 +3,13 @@ import { apiProductos } from '../../Mock'
 import ItemList from '../ItemList/ItemList'
 
 
+
 const ListContainer = (props) => {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
         apiProductos().then(respuesta => {
-            setProductos(respuesta)
+            setProductos(respuesta)                                                                     
         })
     },[])
 

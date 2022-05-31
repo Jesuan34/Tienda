@@ -12,4 +12,12 @@ export const apiProductos = () => {
             resolve(productos)
         }, 2000)
     })
-}
+};
+
+export const idProducto = () => {
+    return new Promise((respuesta) => {
+        setTimeout(() => {
+            respuesta(productos.id)
+        },2000)
+    })
+};
