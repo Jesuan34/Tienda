@@ -1,11 +1,10 @@
 import React from 'react';
-import Item from '../Item/Item';
 
-const ItemDetail = ({ Item }) => {
+const ItemDetail = ({ Titulo }) => {
     
     return (
         <div>
-            {productos.map(producto => <Item key={producto.id} {...producto} />)}
+            <h3>{Titulo}</h3> 
         </div>
     )
 };

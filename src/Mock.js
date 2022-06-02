@@ -14,10 +14,10 @@ export const apiProductos = () => {
     })
 };
 
-export const idProducto = () => {
-    return new Promise((respuesta) => {
+export const idProducto = (id) => {
+    return new Promise(respuesta => {
         setTimeout(() => {
-            respuesta(productos.id)
-        },2000)
+            respuesta(productos.find(producto => producto.id === '1'))
+        }, 2000)
     })
 };

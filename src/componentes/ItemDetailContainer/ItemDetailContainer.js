@@ -1,21 +1,21 @@
 import {useState, useEffect} from 'react'
 import { idProducto } from '../../Mock'
-import React from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
+import React from 'react'
 
 
-const ItemDetailContainer = (id) => {
-    const [id, setIdProducto] = useState([])
+const ItemDetailContainer = ({id}) => {
+    const [productoId, setIdProducto] = useState([])
 
     useEffect(() => {
-        idProducto().then(respuesta => {
+        idProducto(id).then(respuesta => {
             setIdProducto(respuesta)                                                                     
         })
     },[])
 
     return(
         <div>
-            <ItemDetail id={id}/>
+            <ItemDetail Titulo={productoId?.nombre}/>
         </div>
     )
 }
