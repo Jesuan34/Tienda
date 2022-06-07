@@ -1,21 +1,24 @@
 import {useState, useEffect} from 'react'
 import { idProducto } from '../../Mock'
+import { useParams } from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import React from 'react'
 
 
-const ItemDetailContainer = ({id}) => {
+const ItemDetailContainer = () => {
     const [productoId, setIdProducto] = useState([])
 
+    const {detalleId} = useParams()
+
     useEffect(() => {
-        idProducto(id).then(respuesta => {
+        idProducto(detalleId).then(respuesta => {
             setIdProducto(respuesta)                                                                     
         })
     },[])
 
     return(
         <div>
-            <ItemDetail Titulo={productoId?.nombre}/>
+            <ItemDetail {...productoId}/>
         </div>
     )
 }

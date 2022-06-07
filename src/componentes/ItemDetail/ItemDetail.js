@@ -1,11 +1,16 @@
 import React from 'react';
+import ItemCount from '../ItemCount/ItemCount'
 
-const ItemDetail = ({ Titulo }) => {
-    
+const ItemDetail = ({ nombre, descripcion }) => {
+
     return (
-        <div>
-            <h3>{Titulo}</h3> 
+        <><div>
+            <h2>{nombre}</h2>
+            <p>{descripcion}</p>
         </div>
+        <div>
+            <ItemCount />
+        </div></>
     )
 };
 
