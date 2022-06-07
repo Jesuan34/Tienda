@@ -13,7 +13,6 @@ const ContadorItem = () => {
 
     return(
         <div>
-            <p>Nombre del producto</p>
             <button onClick={RestaItem}>-</button>
             <h4>{contador}</h4>
             <button onClick={SumaItem}>+</button>
