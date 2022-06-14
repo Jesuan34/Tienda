@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import ItemCount from '../ItemCount/ItemCount'
 import {Link} from 'react-router-dom'
+import CarritoContext from '../../context/carritoContext';
 
 const ItemDetail = ({ nombre, descripcion, stock }) => {
 const [cantidad, setCantidad] = useState(0)
 
+const {agregarItem} = useContext (CarritoContext)
+
 const agregarCarrito = (contador) => {
     console.log("producto agregado")
     setCantidad(contador)
+    agregarItem({id, nombre, precio, cantidad})
 }
 
 
